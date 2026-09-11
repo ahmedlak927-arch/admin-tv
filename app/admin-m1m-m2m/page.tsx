@@ -184,7 +184,7 @@ export default function AdminPage() {
       if (formData.useProxy && finalStreamUrl) {
         // Check if URL already has proxy prefix
         if (!finalStreamUrl.includes('api/proxy?url=')) {
-          finalStreamUrl = `https://alex-tv-ku.vercel.app/api/proxy?url=${encodeURIComponent(finalStreamUrl)}`;
+          finalStreamUrl = `https://tv-all-m1m.vercel.app/api/proxy?url=${encodeURIComponent(finalStreamUrl)}`;
         }
       }
 
@@ -801,7 +801,7 @@ export default function AdminPage() {
                   <div className="mt-2 p-2 bg-blue-500/10 border border-blue-500/20 rounded-lg">
                     <p className="text-xs text-blue-400">
                       🔗 Will be saved as: <span className="font-mono break-all">
-                        https://alex-tv-ku.vercel.app/api/proxy?url={encodeURIComponent(formData.streamUrl)}
+                        https://tv-all-m1m.vercel.app/api/proxy?url={encodeURIComponent(formData.streamUrl)}
                       </span>
                     </p>
                   </div>
